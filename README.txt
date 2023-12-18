@@ -3,7 +3,7 @@ D287 Java Frameworks
 12/18/23
 
 C
-Prompt:  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
+Prompt: Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 File Name: mainscreen.html
 Line #: 14
 Change: <title>My Bicycle Shop</title> ==> <title>Remi's Cafe</title>
