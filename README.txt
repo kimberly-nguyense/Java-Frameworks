@@ -15,10 +15,16 @@ Line #: 53
 Change: <h2>Products</h2> ==> <h2>Sets</h2>
 
 D
-Prompt:
-File Name:
-Line #:
-Change:
+Prompt: Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
+File Name: mainscreen.html
+Line #: 90-92
+Change: Add link to About page
+File Name: AboutPageController.java
+Line #: 1-20
+Change: Add @Controller to AboutPageController class and @GetMapping("/aboutPage") to showAboutPage method, which returns aboutPage.html
+File Name: aboutPage.html
+Line #: 1-29
+Change: Add Our Story header and paragraph. Add link back to main screen.
 
 E
 Prompt:
