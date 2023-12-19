@@ -27,10 +27,14 @@ Line #: 1-29
 Change: Add Our Story header and paragraph. Add link back to main screen.
 
 E
-Prompt:
-File Name:
-Line #:
-Change:
+Prompt: Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
+File Name: BootStrapData.java
+Line #: 37-39
+Change: Check if part and product lists are empty before proceeding.
+Line #: 41-71
+Change: Create OutsourcedParts and save to OutSourcedPartRepository. (Re-used the commented out code)
+Line #: 85-94
+Change: Create Products and save to ProductRepository. (Re-used the commented out code)
 
 F
 Prompt:
