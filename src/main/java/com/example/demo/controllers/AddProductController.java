@@ -87,7 +87,19 @@ public class AddProductController {
             return "confirmationaddproduct";
         }
     }
+    @GetMapping("/buynow")
+    public String buyNow(@RequestParam("productID") int theId, Model theModel) {
+        ProductService productService = context.getBean(ProductServiceImpl.class);
+        Product foundProduct=productService.findById(theId);
 
+        if(foundProduct.getInv() < 1){
+            return "buynowfail";
+        }
+
+        foundProduct.setInv(foundProduct.getInv() - 1);
+        productService.save(foundProduct);
+        return "buynowsuccess";
+    }
     @GetMapping("/showProductFormForUpdate")
     public String showProductFormForUpdate(@RequestParam("productID") int theId, Model theModel) {
         theModel.addAttribute("parts", partService.findAll());

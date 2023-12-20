@@ -37,10 +37,24 @@ Line #: 85-94
 Change: Create Products and save to ProductRepository. (Re-used the commented out code)
 
 F
-Prompt:
-File Name:
-Line #:
-Change:
+Prompt: Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters
+        •   The “Buy Now” button must be next to the buttons that update and delete products.
+File Name: mainscreen.html
+Line #: 83
+Change: Buy Now button creating new relative URL "buynow" with product ID as the parameter
+        •   The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
+File Name: AddProductController.java
+Line #: 90-102
+Change: Create ProductService object, initialize temp Product reference to the product matching the passed in product ID.
+        If the product's inventory is less than 1, redirect to the buynowfail.html
+        Else, decerement the product's inventory, save the Product reference using Product Service object, redirect to the buynowsuccess.html
+        •   Display a message that indicates the success or failure of a purchase.
+File Name: buynowsuccess.html
+Line #: 1-15
+Change: Successful purchase message.
+File Name: buynowfail.html
+Line #: 1-15
+Change: Failed purchase message.
 
 G
 Prompt:
