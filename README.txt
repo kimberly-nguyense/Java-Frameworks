@@ -58,7 +58,7 @@ Change: Failed purchase message.
 
 G
 Prompt: Modify the parts to track maximum and minimum inventory by doing the following:
-       •   Add additional fields to the part entity for maximum and minimum inventory.
+        •   Add additional fields to the part entity for maximum and minimum inventory.
 File Name: Part.java
 Line #: 31-34, 56-63
 Change: Add int minInv, int maxInv fields to Part entity. Add constructor including minInv and maxInv fields.
@@ -80,7 +80,16 @@ Line #: 20; 1-18; 1-33
 Change: To Part class, add Custom Validator @ValidInv, validated by class InvValidator. Validates Part if inventory is between or at the minimum and maximum value.
 
 H
-Prompt:
+Prompt: H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
+        •   Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
+File Name:
+Line #:
+Change:
+Prompt: •   Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
+File Name: ValidEnufParts.java, EnufPartsValidator.java
+Line #: 20; 36-38
+Change: Updated error message to be more specific. Updated validator to check if parts can still meet minimum requirements.
+Prompt: •   Display error messages when adding and updating parts if the inventory is greater than the maximum.
 File Name:
 Line #:
 Change:
