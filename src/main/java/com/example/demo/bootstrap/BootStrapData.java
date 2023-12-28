@@ -62,6 +62,9 @@ public class BootStrapData implements CommandLineRunner {
         inhousePart.setId(105);
         inhousePart.setInv(13);
         inhousePart.setPrice(2.50);
+        inhousePart.setMinInv(1);
+        inhousePart.setMaxInv(13);
+        inhousePart.setPartId(1);
         inhousePartRepository.save(inhousePart);
 
         Set<Product> assProducts = new HashSet<>();
@@ -72,6 +75,8 @@ public class BootStrapData implements CommandLineRunner {
         outsourcedPart.setInv(5);
         outsourcedPart.setPrice(3.00);
         outsourcedPart.setId(100);
+        outsourcedPart.setMinInv(1);
+        outsourcedPart.setMaxInv(10);
         assProducts.add(setA);
         assProducts.add(setB);
         assProducts.add(setE);
@@ -84,6 +89,8 @@ public class BootStrapData implements CommandLineRunner {
         outsourcedPart.setInv(5);
         outsourcedPart.setPrice(5.00);
         outsourcedPart.setId(101);
+        outsourcedPart.setMinInv(1);
+        outsourcedPart.setMaxInv(10);
         assProducts.add(setC);
         assProducts.add(setD);
         assProducts.add(setE);
@@ -96,6 +103,8 @@ public class BootStrapData implements CommandLineRunner {
         outsourcedPart.setInv(5);
         outsourcedPart.setPrice(3.50);
         outsourcedPart.setId(102);
+        outsourcedPart.setMinInv(1);
+        outsourcedPart.setMaxInv(12);
         assProducts.add(setA);
         assProducts.add(setC);
         assProducts.add(setE);
@@ -108,6 +117,8 @@ public class BootStrapData implements CommandLineRunner {
         outsourcedPart.setInv(5);
         outsourcedPart.setPrice(4.00);
         outsourcedPart.setId(103);
+        outsourcedPart.setMinInv(1);
+        outsourcedPart.setMaxInv(12);
         assProducts.add(setB);
         assProducts.add(setD);
         assProducts.add(setE);

@@ -42,13 +42,13 @@ Prompt: Add a “Buy Now” button to your product list. Your “Buy Now” butt
 File Name: mainscreen.html
 Line #: 83
 Change: Buy Now button creating new relative URL "buynow" with product ID as the parameter
-        •   The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
+Prompt: •   The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
 File Name: AddProductController.java
 Line #: 90-102
 Change: Create ProductService object, initialize temp Product reference to the product matching the passed in product ID.
         If the product's inventory is less than 1, redirect to the buynowfail.html
         Else, decerement the product's inventory, save the Product reference using Product Service object, redirect to the buynowsuccess.html
-        •   Display a message that indicates the success or failure of a purchase.
+Prompt: •   Display a message that indicates the success or failure of a purchase.
 File Name: buynowsuccess.html
 Line #: 1-15
 Change: Successful purchase message.
@@ -57,10 +57,27 @@ Line #: 1-15
 Change: Failed purchase message.
 
 G
-Prompt:
-File Name:
-Line #:
-Change:
+Prompt: Modify the parts to track maximum and minimum inventory by doing the following:
+       •   Add additional fields to the part entity for maximum and minimum inventory.
+File Name: Part.java
+Line #: 31-34, 56-63
+Change: Add int minInv, int maxInv fields to Part entity. Add constructor including minInv and maxInv fields.
+Prompt: •   Modify the sample inventory to include the maximum and minimum fields.
+File Name: BootStrapData.java
+Line #: 65-66, 77-78, 91-92, 105-106
+Change: Add minInv, maxInv values to each sample inventory part.
+Prompt: •   Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+File Name: InhousePartForm.html, OutsourcedPartForm.html
+Line #: 24-27 (both)
+Change: Add text input for minInv and maxInv
+Prompt: •   Rename the file the persistent storage is saved to.
+File Name: application.properties
+Line #: 6
+Change: Changed file name to spring-boot-h2-db-d287 and changed path to new file name.
+Prompt: •   Modify the code to enforce that the inventory is between or at the minimum and maximum value.
+File Name: Part.java, ValidInv.java, InvValidator.java
+Line #: 20; 1-18; 1-33
+Change: To Part class, add Custom Validator @ValidInv, validated by class InvValidator. Validates Part if inventory is between or at the minimum and maximum value.
 
 H
 Prompt:
