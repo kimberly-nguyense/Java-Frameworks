@@ -94,8 +94,13 @@ File Name:
 Line #:
 Change:
 
-J
-Prompt:
+I
+Prompt: Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 File Name:
 Line #:
 Change:
+
+J
+Prompt: Remove the class files for any unused validators in order to clean your code.
+File Name: DeletePartValidator.java
+Change: Deleted file because it wasn't ever used.
