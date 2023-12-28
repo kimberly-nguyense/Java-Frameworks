@@ -82,17 +82,17 @@ Change: To Part class, add Custom Validator @ValidInv, validated by class InvVal
 H
 Prompt: H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
         •   Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
-File Name:
-Line #:
-Change:
+File Name: InvValidator.java
+Line #: 31
+Change: Add custom message if inventory is below minimum
 Prompt: •   Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
 File Name: ValidEnufParts.java, EnufPartsValidator.java
 Line #: 20; 36-38
 Change: Updated error message to be more specific. Updated validator to check if parts can still meet minimum requirements.
 Prompt: •   Display error messages when adding and updating parts if the inventory is greater than the maximum.
-File Name:
-Line #:
-Change:
+File Name: InvValidator.java
+Line #: 34
+Change: Add custom message if inventory is above maximum
 
 I
 Prompt: Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
