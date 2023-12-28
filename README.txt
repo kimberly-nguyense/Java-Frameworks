@@ -96,9 +96,9 @@ Change: Add custom message if inventory is above maximum
 
 I
 Prompt: Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
-File Name:
-Line #:
-Change:
+File Name: PartTest.java
+Line #: 160-176
+Change: Test minInv, maxInv setters and getters.
 
 J
 Prompt: Remove the class files for any unused validators in order to clean your code.
